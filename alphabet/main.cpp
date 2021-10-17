@@ -2,29 +2,32 @@
 #include <array>
 
 using namespace std;
-void t(array<string,6> &s)
+void R(array<string, 6>& s) {
+    s[0] += " __    ";
+    s[1] += "|  \\  ";
+    s[2] += "|__/   ";
+    s[3] += "|\\    ";
+    s[4] += "| \\   ";
+    s[5] += "|  \\  ";
+}
+void t(array<string, 6>& s)
 {
-s[0]+="--------- ";
-s[1]+="    |     ";
-s[2]+="    |     ";
-s[3]+="    |     ";
-s[4]+="    |     ";
-s[5]+="    |     ";
-
-
-
-
-
+    s[0] += "--------- ";
+    s[1] += "    |     ";
+    s[2] += "    |     ";
+    s[3] += "    |     ";
+    s[4] += "    |     ";
+    s[5] += "    |     ";
 
 }
 
-    void o(array<string, 6>&s) {
-    s[0] += "  _____";
+void o(array<string, 6>& s) {
+    s[0] += "  _____     ";
     s[1] += " /      \\   ";
-    s[2] += "/        \\";
-    s[3] += "|        |";
-    s[4] += "\\       /";
-    s[5] += " \\_____/";
+    s[2] += "/        \\  ";
+    s[3] += "|        |  ";
+    s[4] += "\\       /   ";
+    s[5] += " \\_____/    ";
 }
 
 void q(array<string, 6>& s) {
@@ -98,10 +101,6 @@ void e(array<string, 6>& s) {
     s[5] += "|_____    ";
 
 
-
-
-
-
 }
 
 
@@ -116,7 +115,15 @@ void d(array<string, 6>& s) {
 
 }
 
+void b(array<string, 6>& s) {
+    s[0] += "|\\     ";
+    s[1] += "|/     ";
+    s[2] += "|\\     ";
+    s[3] += "| \\    ";
+    s[4] += "| /    ";
+    s[5] += "|/     ";
 
+}
 
 
 void a(array<string, 6>& s) {
@@ -129,15 +136,6 @@ void a(array<string, 6>& s) {
 
 }
 
-void b(array<string, 6>& s) {
-    s[0] += "|\\     ";
-    s[1] += "|/     ";
-    s[2] += "|\\     ";
-    s[3] += "| \\    ";
-    s[4] += "| /    ";
-    s[5] += "|/     ";
-
-}
 
 
 
@@ -145,11 +143,6 @@ int main()
 {
 
     array<string, 6> screen;
-
-    
-    for (int i=0; i<6; i++)
-        cout<< screen[i]<<endl;
-
     a(screen);
     b(screen);
 
@@ -168,10 +161,7 @@ int main()
     N(screen);
     L(screen);
     o(screen);
-
-
-
-
+    R(screen);
     for (int i = 0; i < 6; i++)
         cout << screen[i] << endl;
     return 0;
