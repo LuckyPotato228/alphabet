@@ -2,14 +2,23 @@
 #include <array>
 
 using namespace std;
+void L(array<string, 6>& s) {
+    s[0] += "|           ";
+    s[1] += "|           ";
+    s[2] += "|           ";
+    s[3] += "|           ";
+    s[4] += "|           ";
+    s[5] += "|_____      ";
+}
+
 
 void N(array<string,6> &s){
-s[0]+="||\\\\\    || ";
+s[0]+="||\\\\\    ||  ";
 s[1]+="|| \\\\   ||  ";
 s[2]+="||  \\\\  ||  ";
 s[3]+="||   \\\\ ||  ";
 s[4]+="||    \\\\||  ";
-s[5]+="||     \\\||   ";
+s[5]+="||     \\\||  ";
 }
 void i(array<string, 6>& s) {
     s[0] += "___    ";
@@ -108,11 +117,6 @@ int main()
 {
 
     array<string, 6> screen;
-
-  
-
-
-
     a(screen);
     b(screen);
 
@@ -128,17 +132,11 @@ int main()
   
     K(screen);
     N(screen);
-
+    L(screen);
 
 
     for (int i=0; i<6; i++)
-
         cout<< screen[i]<<endl;
-
-
-
-
-
     return 0;
 }
 
