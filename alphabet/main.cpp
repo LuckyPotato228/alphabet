@@ -2,6 +2,14 @@
 #include <array>
 
 using namespace std;
+void i(array<string, 6>& s) {
+    s[0] += "___    ";
+    s[1] += " |     ";
+    s[2] += " |     ";
+    s[3] += " |     ";
+    s[4] += " |     ";
+    s[5] += "_|_    ";
+}
 void K(array<string,6> &s){
 s[0]+="||  //  ";
 s[1]+="|| //   ";
@@ -81,22 +89,15 @@ s[5] += "|/     ";
 
 
 
-
-
 int main()
 {
 
     array<string, 6> screen;
 
 
-
-
-
-
-
     a(screen);
     b(screen);
-    K(screen);
+
     d(screen);
     e(screen);
     f(screen);
@@ -105,9 +106,9 @@ int main()
 
 
     h(screen);
-
-
-
+    i(screen);
+  
+    K(screen);
 
 
     for (int i=0; i<6; i++)
