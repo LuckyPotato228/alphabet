@@ -2,10 +2,20 @@
 #include <array>
 
 using namespace std;
+void e(array<string,6> &s){
+s[0]+=" _____   ";
+s[1]+="|         ";
+s[2]+="|_____  ";
+s[3]+="|         ";
+s[4]+="|         ";
+s[5]+="|_____  ";
 
 
 
 
+
+
+}
 
 
 
@@ -42,14 +52,19 @@ void b(array<string, 6>& s) {
 
 }
 
+
 int main()
 {
 
     array<string, 6> screen;
+
     a(screen);
     b(screen);
   
     d(screen);
+    e(screen);
+   
+
 
 
 
