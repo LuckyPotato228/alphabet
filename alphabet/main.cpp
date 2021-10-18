@@ -2,6 +2,15 @@
 #include <array>
 
 using namespace std;
+
+void C(array<string, 6>& s) {
+    s[0] += " _____ ";
+    s[1] += "|      ";
+    s[2] += "|      ";
+    s[3] += "|      ";
+    s[4] += "|      ";
+    s[5] += "|_____ ";
+}
 void J(array<string, 6>& s) {
     s[0] += "   *     ";
     s[1] += "   |     ";
@@ -170,12 +179,12 @@ void d(array<string, 6>& s) {
 }
 
 void b(array<string, 6>& s) {
-    s[0] += "|\\     ";
-    s[1] += "|/     ";
-    s[2] += "|\\     ";
-    s[3] += "| \\    ";
-    s[4] += "| /    ";
-    s[5] += "|/     ";
+    s[0] += "|\\    ";
+    s[1] += "|/    ";
+    s[2] += "|\\    ";
+    s[3] += "| \\   ";
+    s[4] += "| /   ";
+    s[5] += "|/    ";
 
 }
 
@@ -194,12 +203,14 @@ void a(array<string, 6>& s) {
 
 
 
+
+
 int main()
 {
-
     array<string, 6> screen;
     a(screen);
     b(screen);
+    C(screen);
     d(screen);
     e(screen);
     f(screen);
@@ -217,10 +228,10 @@ int main()
     U(screen);
     W(screen);
     y(screen);
-    Z(screen);
 
     for (int i = 0; i < 6; i++)
         cout << screen[i] << endl;
     return 0;
 }
+
 
