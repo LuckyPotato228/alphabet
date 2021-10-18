@@ -3,37 +3,41 @@
 #include <array>
 
 using namespace std;
+void U(array<string, 6>& s) {
+    s[0] += "|      |  ";
+    s[1] += "|      |  ";
+    s[2] += "|      |  ";
+    s[3] += "|      |  ";
+    s[4] += "\\      /  ";
+    s[5] += " \\____/   ";
 
-void y(array<string, 6> &s){
-s[0]+= "\\\\    //" ;
-s[1]+= " \\\\  //  " ;
-s[2]+= "  \\\\//   " ;
-s[3]+= "   || " ;
-s[4]+= "   ||  " ;
-s[5]+= "   ||  " ;
+}
+void y(array<string, 6> &s) {
+    s[0] += "\\\\    //   ";
+    s[1] += " \\\\  //    ";
+    s[2] += "  \\\\//     ";
+    s[3] += "   ||      ";
+    s[4] += "   ||      ";
+    s[5] += "   ||      ";
 }
 
-void Z(array<string,6> &s)
+void Z(array<string, 6>& s)
 {
-s[0]+="------ ";
-s[1]+="    /  ";
-s[2]+="   /   ";
-s[3]+="  /    ";
-s[4]+=" /     ";
-s[5]+="/----- ";
-
-
-
-
+    s[0] += "------ ";
+    s[1] += "    /  ";
+    s[2] += "   /   ";
+    s[3] += "  /    ";
+    s[4] += " /     ";
+    s[5] += "/----- ";
 
 }
-void W(array<string,6> &s){
-s[0]+="\\                  /";
-s[1]+=" \\                / ";
-s[2]+="  \\      /\\      /  ";
-s[3]+="   \\    /  \\    /   ";
-s[4]+="    \\  /    \\  /    ";
-s[5]+="     \\/      \\/     ";
+void W(array<string, 6>& s) {
+    s[0] += "\\                  / ";
+    s[1] += " \\                /  ";
+    s[2] += "  \\      /\\      /   ";
+    s[3] += "   \\    /  \\    /    ";
+    s[4] += "    \\  /    \\  /     ";
+    s[5] += "     \\/      \\/      ";
 }
 void R(array<string, 6>& s) {
     s[0] += " __   ";
@@ -170,54 +174,33 @@ void a(array<string, 6>& s) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 int main()
 {
 
     array<string, 6> screen;
-    y(screen);
-
-
-
- 
-
-
-    
-
-   
-
-
-
 
     a(screen);
     b(screen);
     d(screen);
     e(screen);
     f(screen);
-    t(screen);
     h(screen);
     i(screen);
-    W(screen);
     K(screen);
-    q(screen);
-    N(screen);
     L(screen);
+    N(screen);
     o(screen);
+    q(screen);
     R(screen);
+    t(screen);
+    U(screen);
+    W(screen);
+    y(screen);
     Z(screen);
+
     for (int i = 0; i < 6; i++)
         cout << screen[i] << endl;
 
-    return 0;
+        return 0;
 }
 
