@@ -2,6 +2,16 @@
 #include <array>
 
 using namespace std;
+void P(array<string, 6>& s) {
+    s[0] += "   |-------    ";
+    s[1] += "   |      |    ";
+    s[2] += "   |      |    ";
+    s[3] += "   |-------    ";
+    s[4] += "   |           ";
+    s[5] += "   |           ";
+
+}
+
 void M(array<string, 6>& s) {
     s[0] += "  ||\\\\        //||   ";
     s[1] += "  || \\\\      // ||   ";
@@ -228,6 +238,7 @@ int main()
     M(screen);
     N(screen);
     o(screen);
+    P(screen);
     q(screen);
     R(screen);
     t(screen);
@@ -239,4 +250,3 @@ int main()
         cout << screen[i] << endl;
     return 0;
 }
-
