@@ -1,7 +1,18 @@
+
 #include <iostream>
 #include <array>
 
 using namespace std;
+
+void y(array<string, 6> &s){
+s[0]+= "\\\\    //" ;
+s[1]+= " \\\\  //  " ;
+s[2]+= "  \\\\//   " ;
+s[3]+= "   || " ;
+s[4]+= "   ||  " ;
+s[5]+= "   ||  " ;
+}
+
 void Z(array<string,6> &s)
 {
 s[0]+="------ ";
@@ -168,32 +179,34 @@ void a(array<string, 6>& s) {
 
 
 
+
+
 int main()
 {
 
     array<string, 6> screen;
+    y(screen);
+
+
 
  
 
 
     
 
-    for (int i=0; i<6; i++)
-        cout<< screen[i]<<endl;
+   
+
+
+
 
     a(screen);
     b(screen);
-
     d(screen);
     e(screen);
     f(screen);
     t(screen);
-
-
-
     h(screen);
     i(screen);
-
     W(screen);
     K(screen);
     q(screen);
@@ -204,5 +217,7 @@ int main()
     Z(screen);
     for (int i = 0; i < 6; i++)
         cout << screen[i] << endl;
+
     return 0;
 }
+
